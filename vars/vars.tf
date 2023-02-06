@@ -19,3 +19,32 @@ variable "lastname" {
 output "lastname" {
   value = var.lastname
 }
+
+# default_variables
+variable "default_variables" {
+  default = 9985
+}
+output "default_variables" {
+  value = var.default_variables
+}
+
+#list_variables
+variable "list_variables" {
+  default = [100,"nag",yes]
+}
+
+output "list_variables" {
+  value = var.list_variables[1]
+}
+
+# map_variables
+variable "map_variables" {
+  default = {
+    string = "raj"
+    number = 143
+    boolean = no
+  }
+}
+output "map_variables" {
+  value = var.map_variables[2]
+}
