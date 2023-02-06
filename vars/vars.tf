@@ -5,3 +5,10 @@ variable "ex" {
 output "ex" {
   value = var.ex
 }
+
+variable "firstname" {
+  default = "nalluri"
+}
+output "firstname" {
+  value = var.firstname
+}
