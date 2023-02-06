@@ -50,5 +50,5 @@ variable "map_variables" {
   }
 }
 output "map_variables" {
-  value = var.map_variables[boolean]
+  value = var.map_variables["boolean"]
 }
