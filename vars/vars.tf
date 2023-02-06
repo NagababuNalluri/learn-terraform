@@ -52,3 +52,9 @@ variable "map_variables" {
 output "map_variables" {
   value = var.map_variables["boolean"]
 }
+# variable inputs from tfvars
+variable "inputfromtfvars" {}
+
+output "inputfromtfvars" {
+  value = var.inputfromtfvars
+}
