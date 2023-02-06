@@ -33,6 +33,7 @@ variable "list_variables" {
   default = [
     100,
     "nag",
+    true
   ]
 }
 
@@ -45,7 +46,7 @@ variable "map_variables" {
   default = {
     string = "raj"
     number = 143
-    boolean = no
+    boolean = false
   }
 }
 output "map_variables" {
