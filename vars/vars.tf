@@ -33,7 +33,6 @@ variable "list_variables" {
   default = [
     100,
     "nag",
-    yes
   ]
 }
 
