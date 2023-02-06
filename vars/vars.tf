@@ -12,3 +12,10 @@ variable "firstname" {
 output "firstname" {
   value = var.firstname
 }
+
+variable "lastname" {
+  default = "nagababu"
+}
+output "lastname" {
+  value = var.lastname
+}
