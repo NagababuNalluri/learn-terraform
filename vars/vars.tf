@@ -30,7 +30,10 @@ output "default_variables" {
 
 #list_variables
 variable "list_variables" {
-  default = [100,"nag",yes]
+  default = [
+    100,
+    "nag",
+    yes ]
 }
 
 output "list_variables" {
