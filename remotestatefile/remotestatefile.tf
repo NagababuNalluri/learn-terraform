@@ -18,7 +18,7 @@ resource "aws_instance" "web" {
 terraform {
   backend "s3" {
     bucket = "terraform-nag-b70"
-    key    = "resources"
+    key    = "remotestatefile/terraform.tfstatefile"
     region = "us-east-1"
   }
 }
