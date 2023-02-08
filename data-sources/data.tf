@@ -5,7 +5,7 @@ data "aws_ami" "example" {
 
 }
 output "id" {
-  value = "data.aws_ami.example.id"
+  value = data.aws_ami.example.id
 }
 
 #output "ami" {
