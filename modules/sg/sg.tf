@@ -1,5 +1,5 @@
 resource "aws_security_group" "allow_tls_1" {
-  name        = "allow_tls"
+  name        = "allow_tls_1"
   description = "Allow tls inbound traffic"
   ingress {
     description = "TLC from VPC"
@@ -15,7 +15,7 @@ resource "aws_security_group" "allow_tls_1" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
-    Name = "allow_tls"
+    Name = "allow_tls_1"
   }
 }
 
