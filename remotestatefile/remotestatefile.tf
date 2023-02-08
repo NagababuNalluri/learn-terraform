@@ -15,3 +15,10 @@ resource "aws_instance" "web" {
     Name = "Ec2-test"
   }
 }
+terraform {
+  backend "s3" {
+    bucket = "terraform-nag-b70"
+    key    = "resources"
+    region = "us-east-1"
+  }
+}
