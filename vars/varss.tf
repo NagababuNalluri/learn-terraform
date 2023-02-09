@@ -2,7 +2,7 @@ variable "map" {
   default = {
     students = 80
     name     = "nagababu"
-    person   = yes
+    person   = false
   }
 }
 
