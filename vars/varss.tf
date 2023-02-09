@@ -7,5 +7,5 @@ variable "map" {
 }
 
 output "map" {
-  value = var.map["person","name","students"]
+  value = var.map["person"]
 }
