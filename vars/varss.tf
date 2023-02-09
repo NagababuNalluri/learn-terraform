@@ -12,6 +12,6 @@ output "map" {
 
 variable "example" {}
 
-output "example" {
+output "file" {
   value = var.example
 }
