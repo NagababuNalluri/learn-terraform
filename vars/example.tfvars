@@ -1,1 +1,1 @@
-inputsfromtfvars = "hi from example file"
+inputfromtfvars = "hi from example file"

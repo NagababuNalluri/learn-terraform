@@ -9,3 +9,9 @@ variable "map" {
 output "map" {
   value = var.map["person"]
 }
+
+variable "example" {}
+
+output "example" {
+  value = var.example
+}
