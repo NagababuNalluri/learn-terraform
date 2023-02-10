@@ -31,8 +31,8 @@ resource "null_resource" "provision" {
     ]
   }
 }
-resource "aws_security_group" "allow_tls" {
-  name        = "allow_tls"
+resource "aws_security_group" "allow_tls_provisioner" {
+  name        = "allow_tls_provisioner"
   description = "Allow tls inbound traffic"
   ingress {
     from_port   = 22
@@ -47,6 +47,6 @@ resource "aws_security_group" "allow_tls" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
-    Name = "allow_tls"
+    Name = "allow_tls_provisioner"
   }
 }
