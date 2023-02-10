@@ -23,8 +23,8 @@ resource "null_resource" "provision" {
   provisioner "remote-exec" {
     connection {
       host     = aws_instance.web.public_ip
-      user     = centos
-      password = DevOps321
+      user     = "centos"
+      password = "DevOps321"
     }
     inline = [
       "echo hello"
