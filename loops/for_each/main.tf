@@ -24,13 +24,7 @@ data "aws_ami" "centos8" {
   owners           = ["973714476881"]
 
 }
-resource "aws_instance" "web" {
-  ami = data.aws_ami.centos8.id
-  instance_type = "t3.micro"
-  tags = {
-    Name = "Ec2-test"
-  }
-}
-provider "aws" {
-  region = "us-east-1"
+
+output "publicip" {
+  value = {for k, v in aws_instance.web : k => v.public_ip}
 }
