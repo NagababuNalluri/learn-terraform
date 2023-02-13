@@ -14,3 +14,7 @@ data "aws_ami" "centos8" {
 }
 variable "instance_type" {}
 variable "name" {}
+
+output "public_ip" {
+  value = aws_instance.web.public_ip
+}
