@@ -16,3 +16,7 @@ data "aws_ami" "example" {
 variable "components" {
   default = ["cart","frontend"]
 }
+
+output "publicip" {
+  value = aws_instance.web.public_ip
+}
