@@ -6,5 +6,6 @@ resource "aws_instance" "web" {
   }
 }
 data "aws_ami" "centos" {
+  most_recent = true
   owners = ["973714476881"]
 }
