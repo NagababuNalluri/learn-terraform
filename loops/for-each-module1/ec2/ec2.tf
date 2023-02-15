@@ -22,6 +22,10 @@ variable "components" {
     }
   }
 }
-output "publicip" {
-  value = {for k,v in aws_instance.web : k => v.public_ip}
+variable "instance_type" {}
+
+variable "name" {}
+
+output "output" {
+  value = aws_instance.web
 }
