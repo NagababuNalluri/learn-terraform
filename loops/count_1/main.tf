@@ -1,7 +1,7 @@
 resource "aws_instance" "web" {
   count = 2
   ami = data.aws_ami.example.id
-  instance_type = "t3.micro"
+  instance_type = var.type[count.index]
   tags = {
     Name = var.components[count.index]
   }
@@ -15,6 +15,9 @@ data "aws_ami" "example" {
 }
 variable "components" {
   default = ["cart","frontend"]
+}
+variable "type" {
+  default = ["t3.micro","t3.small"]
 }
 
 
