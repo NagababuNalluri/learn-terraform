@@ -1,9 +1,9 @@
 resource "aws_instance" "web" {
-  count = 2
+  count = length(var.components)
   ami = data.aws_ami.example
   instance_type = "t3.micro"
   tags = {
-    Name = "var.components[count:index]"
+    Name = var.components[count:index]
   }
 }
 
