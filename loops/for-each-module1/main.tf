@@ -18,5 +18,5 @@ module "one" {
 }
 
 output "publicip" {
-value = {for k,v in module.one : k => v["xyz"].public_ip}
+value = module.one
 }

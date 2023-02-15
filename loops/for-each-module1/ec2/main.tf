@@ -26,6 +26,6 @@ variable "instance_type" {}
 
 variable "name" {}
 
-output "xyz" {
+output "one" {
   value = aws_instance.web
 }
