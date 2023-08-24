@@ -39,6 +39,6 @@ resource "aws_instance" "EC2" {
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
 
   tags = {
-    Name = "Hemasri"
+    Name = "Dev-Hemasri"
   }
 }
