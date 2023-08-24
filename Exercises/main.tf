@@ -4,9 +4,6 @@ data "aws_ami" "example" {
   owners           = ["973714476881"]
 }
 
-output "ami_id" {
-  value = data.aws_ami.example.id
-}
 
 resource "aws_security_group" "allow_tls" {
   name        = "allow_tls"
